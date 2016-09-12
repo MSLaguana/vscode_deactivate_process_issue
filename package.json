@@ -1,0 +1,24 @@
+{
+    "name": "process-launch-example",
+    "version": "0.0.0",
+    "publisher": "test",
+    "main": "index.js",
+    "engines": {
+        "vscode": "^0.10.1"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "title": "Spawn child process",
+                "command": "test.spawn_child_process"
+            },
+            {
+                "title": "Kill child process",
+                "command": "test.kill_child_process"
+            }
+        ]
+    },
+    "activationEvents": [
+        "onCommand:test.spawn_child_process"
+    ]
+}
